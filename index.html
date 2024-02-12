@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2><i class="fa fa-tasks"></i> Lista de Tarefas</h2>
+            <h6>Um clique para riscar | Dois cliques para apagar</h6>
+            <input id="texto-nova-tarefa" type="text" placeholder="Nome da tarefa" required />
+            <button type="submit"class="btn"><i class="fa fa-plus"></i></button>
+            <button type="reset" class="btn del" onClick="window.location.reload();"><i class="fa fa-trash"></i></button>
+        </form>
+        <ul id="lista-tarefas">
+            
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
